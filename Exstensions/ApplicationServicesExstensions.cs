@@ -13,6 +13,7 @@ namespace DatingApp.Exstensions
             // сервис для создания токена
             services.AddScoped<ITokenServices, TokenService>();
             services.AddScoped<IUserRepository,UserRepository>();
+            services.AddScoped<ILikesRepository, LikesRepository>();
             services.AddScoped<LogUserActivity>();
             services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
             // mssql
